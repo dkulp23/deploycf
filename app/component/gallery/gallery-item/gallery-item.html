@@ -1,0 +1,27 @@
+<li class="gallery-item">
+  <div class="media"
+  ng-if="!galleryItemCtrl.showEditGallery">
+    <div class="media-left media-middle">
+      <a href="#">
+        <img class="media-object" src="http://fillmurray.com/64/64" alt="fillmurray">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">name:
+        <span>{{ galleryItemCtrl.gallery.name | hashtagify: galleryItemCtrl.gallery.name }}</span>
+      </h4>
+      <h4 class="media-heading">description:
+        <span>{{ galleryItemCtrl.gallery.desc }}</span>
+      </h4>
+    </div>
+  </div>
+
+  <div class="btn-group" role="group" aria-label="edit-buttons">
+    <button type="button" class="btn btn-default" ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery">edit</button>
+    <button class="btn btn-default" ng-click="galleryItemCtrl.deleteGallery()">delete</button>
+  </div>
+  
+  <edit-gallery ng-if="galleryItemCtrl.showEditGallery"
+  gallery="galleryItemCtrl.gallery">
+  </edit-gallery>
+</li>

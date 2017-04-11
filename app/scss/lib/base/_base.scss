@@ -1,0 +1,56 @@
+@import '../theme/vars';
+
+body {
+  font-family: helvetica;
+  background-color: $light;
+}
+
+header {
+  background-color: $dark;
+
+  h2 {
+    color: $white;
+  }
+
+  .icon {
+    background-image: url('../assets/images/cf-logo.png');
+    background-size: cover;
+  }
+}
+
+p {
+  float: right;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-std {
+  background-color: $dark;
+  color: $white;
+  font-size: 15px;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $dark / 2;
+  }
+}
+
+footer {
+  background-color: $dark / 2;
+}
+
+.input-std {
+  border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+  text-indent: 10px;
+  font-size: 12px;
+}
