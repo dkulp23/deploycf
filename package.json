@@ -9,7 +9,7 @@
     "build": "./node_modules/webpack/bin/webpack.js",
     "build-watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS",
+    "test": "./node_modules/.bin/karma start karma.conf.js",
     "test-watch": "./node_modules/karma/bin/karma start"
   },
   "repository": {
