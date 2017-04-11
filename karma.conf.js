@@ -3,7 +3,7 @@ delete webpack.entry;
 
 module.exports = function(config) {
   config.set({
-    webpack,
+    webpack: ['webpack'],
     basePath: '',
     frameworks: ['jasmine'],
     files: [
